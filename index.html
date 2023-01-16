@@ -1,0 +1,123 @@
+[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .form{
+            display: none;
+        }
+        @media(max-width=987px){
+           #img3{
+            margin: auto;
+           }  
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="./images/logo.jpg" width="30px" alt="logo">
+  <a class="navbar-brand" href="#">Naico And Company</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active"  href="./index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="./product.html">Products</a>
+      <a class="nav-item nav-link" href="./contact us.html">Contact Us</a>
+      <a class="nav-item nav-link " href="./about us.html">About Us</a>
+    </div>
+  </div>
+</nav>  
+
+  <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/caroseal.jpg" alt="First slide">
+        </div>
+    </div>
+    <section class="product">
+        <div class="container mt-5">
+            <h1 class="text-center">SOME Products</h1>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <img src="./images/p1.jpg" alt="welding roads">
+                <h3 >Pak Bridge</h3>
+                
+                <button class="btn1 btn-success ">Buy</button>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12  mt-5">
+               <img src="./images/p2.jpg" width="70% " alt="spray">
+               <h3 >Spray</h3>
+                <button class="btn1 btn-success ">Buy</button>
+              </div>
+              <div id="img3" class="col-lg-4 col-md-6 col-sm-12  mt-5">
+                <img src="./images/p3.jpg" alt="">
+                <h3 >Welding Toarch</h3>
+                <button class="btn1 btn-success ">Buy</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="form">
+        <h1 class="text-center">Form</h1>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn2 btn-primary">Submit</button>
+          </form>
+    </section>
+    <footer class="bg-dark text-white">
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">  Naico And Company</h5>
+                <p class="card-text text-dark">All Hardware And Welding Tolls Are FOund Here</p>
+               <a href="https://goo.gl/maps/utLfUqo9XrWgRjdb9"> <button class="btn3 btn-primary">Site Map</button></a>
+              </div>
+            </div>
+          </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function(){       
+    $('.btn1').click(function(){
+        $('.form').show();
+    })
+    $('.btn1').click(function(){
+        $('.product').hide();
+    }) 
+    $('.btn2').click(function(){
+        $('.product').show();   
+    })
+    $('.btn2').click(function(){
+        $('.form').hide();   
+    })
+
+    })
+</script>
+</html>
