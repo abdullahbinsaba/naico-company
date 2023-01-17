@@ -10,29 +10,25 @@
         .form{
             display: none;
         }
-        @media(max-width=987px){
-           #img3{
-            margin: auto;
-           }  
-        }
+      
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="./images/logo.jpg" width="30px" alt="logo">
-  <a class="navbar-brand" href="#">Naico And Company</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active"  href="./index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="./product.html">Products</a>
-      <a class="nav-item nav-link" href="./contact us.html">Contact Us</a>
-      <a class="nav-item nav-link " href="./about us.html">About Us</a>
-    </div>
-  </div>
-</nav>  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="./images/logo.jpg" width="30px" alt="logo">
+<a class="navbar-brand" href="#">Naico And Company</a>
+<button class="navbar-toggler" type="button" >
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+  <a class="nav-item nav-link active"  href="./index.html">Home <span class="sr-only">(current)</span></a>
+  <a class="nav-item nav-link" href="./product.html">Products</a>
+  <a class="nav-item nav-link" href="./contact us.html">Contact Us</a>
+  <a class="nav-item nav-link " href="./about us.html">About Us</a>
+</div>
+</div>
+</nav> 
 
   <div class="carousel-inner">
         <div class="carousel-item active">
@@ -117,7 +113,9 @@
     $('.btn2').click(function(){
         $('.form').hide();   
     })
-
+$('.navbar-toggler').click(function(){
+    $('#navbarNavAltMarkup').toggle();
+})
     })
 </script>
 </html>
